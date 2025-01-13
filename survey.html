@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualifying Questions Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .survey-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.875rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="survey-container">
+        <h1>Qualifying Questions</h1>
+        <form id="surveyForm">
+            <div class="question">
+                <label>1. Are you a living wage employer?</label>
+                <input type="radio" name="q1" value="yes"> Yes
+                <input type="radio" name="q1" value="no"> No
+            </div>
+
+            <div class="question">
+                <label>2. Is the highest-paid individual in your business earning no more than 5 times the salary of the lowest-paid employee (excluding temporary or part-time workers)?</label>
+                <input type="radio" name="q2" value="yes"> Yes
+                <input type="radio" name="q2" value="no"> No
+            </div>
+
+            <div class="question">
+                <label>3. Do you have a minimum of 4 out of 5 customer rating, from external sources such as Google, Facebook, Tripadvisor, Trustpilot?</label>
+                <input type="radio" name="q3" value="yes"> Yes
+                <input type="radio" name="q3" value="no"> No
+            </div>
+
+            <div class="question">
+                <label>4. Do you actively support your local community through initiatives, sponsorships, or volunteering, supporting local suppliers?</label>
+                <input type="radio" name="q4" value="yes"> Yes
+                <input type="radio" name="q4" value="no"> No
+            </div>
+
+            <div class="question">
+                <label>5. Have you taken steps to minimise your environmental impact (e.g., recycling programs, energy-efficient practices, reducing waste, refurbished tech)?</label>
+                <input type="radio" name="q5" value="yes"> Yes
+                <input type="radio" name="q5" value="no"> No
+            </div>
+
+            <div class="question">
+                <label>6. Do you directly participate in any of the following industries: Gambling, Weapons manufacturing, Tobacco and Vaping, Adult Entertainment, Predatory Financial Services, Fossil Fuels, Environmentally Destructive Industries, Animal Testing, Fast Fashion?</label>
+                <input type="radio" name="q6" value="yes"> Yes
+                <input type="radio" name="q6" value="no"> No
+            </div>
+
+            <button type="button" class="submit-btn" onclick="submitSurvey()">Submit</button>
+            <div id="error" class="error"></div>
+        </form>
+    </div>
+
+    <script>
+        function submitSurvey() {
+            const form = document.getElementById('surveyForm');
+            const errorDiv = document.getElementById('error');
+            errorDiv.textContent = '';
+
+            const answers = {};
+            let allAnswered = true;
+
+            for (let i = 1; i <= 6; i++) {
+                const radios = form[`q${i}`];
+                const selected = Array.from(radios).find(radio => radio.checked);
+                if (selected) {
+                    answers[`q${i}`] = selected.value;
+                } else {
+                    allAnswered = false;
+                }
+            }
+
+            if (!allAnswered) {
+                errorDiv.textContent = 'Please answer all the questions.';
+                return;
+            }
+
+            console.log('Survey Responses:', answers);
+            alert('Thank you for completing the survey!');
+            form.reset();
+        }
+    </script>
+</body>
+</html>
