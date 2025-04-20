@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GENEXT</title>
+    <link rel="icon" href="assets/imgs/template/favicon.svg" type="image/svg+xml" />
+    <script src="assets/js/vendors/color-modes.js"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/vendors/normalize.css">
+    <link rel="stylesheet" href="assets/css/vendors/animate.min.css">
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/vendors/lightbox.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bg-neutral-0 dark:bg-neutral-dark-0">
+    <header class="main-header mx-auto w-full flex justify-center py-2 z-50 relative dark:bg-primary-dark-0">
+        <div class="container flex justify-between items-center relative px-4">
+            <h1>
+                <a href="index.html">
+                    <img src="assets/imgs/template/logo.svg" alt="logo" class="flex-shrink-0 relative dark:hidden">
+                    <img src="assets/imgs/template/logo-white.svg" alt="logo"
+                        class="flex-shrink-0 relative hidden dark:inline-block">
+                </a>
+            </h1>
+            <ul class="xl:flex hidden">
+
+                <li class="relative"><a href="index.html" class="menu-item">Home</a></li>
+
+
+                <li class="relative"><a href="#about" class="menu-item">About Us</a></li>
+                <li class="relative"><a href="#news" class="menu-item">Latest News & Stories</a></li>
+                <li class="relative"><a href="#certification" class="menu-item">Certification</a></li>
+                <!-- <li class="relative"><a href="page-contact.html" class="menu-item">Contact</a></li> -->
+            </ul>
+            <div class="flex justify-end align-middle content-center items-center relative gap-4">
+
+
+                <div class="dark-light cursor-pointer flex relative z-20">
+                    <img src="assets/imgs/template/icon-dark-light.svg" alt="dark/light" class="dark:hidden">
+                    <img src="assets/imgs/template/icon-dark-light-white.svg" alt="dark/light"
+                        class="hidden dark:inline-block">
+                </div>
+                <!-- <div class="search-box flex relative py-4 z-20">
+          <div class="search-icon cursor-pointer flex pr-2">
+            <img src="assets/imgs/template/icon-search.svg" alt="dark/light" class="flex-shrink-0 relative dark:hidden">
+            <img src="assets/imgs/template/icon-search-white.svg" alt="dark/light" class="flex-shrink-0 relative hidden dark:inline-block">
+          </div>
+          <div class="search-box-content absolute top-full right-0 p-10  mr-[-50px] max-w-[360px] md:max-w-none bg-neutral-0 dark:bg-neutral-dark-200 rounded-2xl shadow-sm hidden invisible mt-8 transition-all duration-300">
+            <h1 class="text-5xl font-bold text-neutral-950 dark:text-neutral-0 mb-4">Search <span class="font-light">Content</span></h1>
+            <div class="relative mb-8">
+              <form action="">
+                <div class="flex gap-4 mb-4 bg-neutral-0 dark:bg-neutral-dark-200 rounded-full p-1 pl-9 border border-neutral-300 dark:border-neutral-dark-300">
+                  <input class="flex-1 focus:outline-none transition duration-200 bg-transparent max-w-[175px] md:max-w-none" type="text" placeholder="Enter your key words">
+                  <button class="min-w-12 size-12 rounded-full bg-primary-light-950 transition duration-200 flex items-center justify-center gap-2" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                      <g clip-path="url(#clip0_135_1647)">
+                        <path d="M15.4202 17.2452L19.8183 21.6443C20.0585 21.8716 20.3775 22 20.7093 22C21.417 21.999 21.9991 21.416 21.9991 20.7084C21.9991 20.3775 21.8717 20.0585 21.6443 19.8183L17.2452 15.421C20.1162 11.6554 19.8321 6.24979 16.3946 2.81137L16.3882 2.80496L16.1333 2.55012C16.0977 2.51274 16.0577 2.47981 16.0142 2.45204C12.2467 -0.932293 6.43592 -0.814043 2.8105 2.81137C-0.936833 6.55962 -0.936833 12.6463 2.8105 16.3927C6.24983 19.832 11.6563 20.1171 15.4202 17.2452ZM14.5356 4.66946C17.2397 7.37637 17.2397 11.8286 14.5356 14.5355C11.8287 17.2388 7.37733 17.2388 4.67042 14.5355C1.96533 11.8286 1.96533 7.37637 4.67042 4.66946C7.37733 1.96529 11.8287 1.96529 14.5356 4.66946Z" fill="#151618" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_135_1647">
+                          <rect width="22" height="22" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              <div class="flex-col justify-start items-start gap-3 inline-flex mt-8">
+                <div class="text-neutral-950 dark:text-neutral-dark-950 text-base font-bold">Suggested</div>
+                <div class="flex flex-wrap gap-4">
+                  <a href="#" class="font-regular text-base text-neutral-700 link-hover hover:text-neutral-950 dark:text-neutral-0 dark:hover:text-neutral-dark-600">Events</a>
+                  <a href="#" class="font-regular text-base text-neutral-700 link-hover hover:text-neutral-950 dark:text-neutral-0 dark:hover:text-neutral-dark-600">Shop</a>
+                  <a href="#" class="font-regular text-base text-neutral-700 link-hover hover:text-neutral-950 dark:text-neutral-0 dark:hover:text-neutral-dark-600">Tech</a>
+                  <a href="#" class="font-regular text-base text-neutral-700 link-hover hover:text-neutral-950 dark:text-neutral-0 dark:hover:text-neutral-dark-600">Fashion</a>
+                  <a href="#" class="font-regular text-base text-neutral-700 link-hover hover:text-neutral-950 dark:text-neutral-0 dark:hover:text-neutral-dark-600">Books</a>
+                  <a href="#" class="font-regular text-base text-neutral-700 link-hover hover:text-neutral-950 dark:text-neutral-0 dark:hover:text-neutral-dark-600">Travel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+                <div class="py-4 hover-up xl:flex hidden relative z-20">
+                    <a class="btn-primary" href="page-login.html">
+                        Sign in
+                    </a>
+                </div>
+                <button class="navbar-burger self-center xl:hidden">
+                    <svg class="fill-neutral-950 dark:fill-neutral-dark-950" id="fi_2976215"
+                        enable-background="new 0 0 464.205 464.205" height="26" viewBox="0 0 464.205 464.205" width="26"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <g id="grip-solid-horizontal_1_">
+                                <path
+                                    d="m435.192 406.18h-406.179c-16.024 0-29.013-12.99-29.013-29.013s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.99 29.013 29.013-.001 16.023-12.99 29.013-29.014 29.013z">
+                                </path>
+                                <path
+                                    d="m435.192 261.115h-406.179c-16.024 0-29.013-12.989-29.013-29.012s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.012-29.014 29.012z">
+                                </path>
+                                <path
+                                    d="m435.192 116.051h-406.179c-16.024 0-29.013-12.989-29.013-29.013s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.013-29.014 29.013z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <!--Mobile Menu-->
+            <div class="navbar-menu fixed top-0 left-0 z-50 w-full h-full bg-neutral-950 bg-opacity-30 hidden">
+                <div class="fixed top-0 left-0 bottom-0 w-5/6 max-w-xs bg-neutral-0 dark:bg-neutral-dark-0">
+                    <nav class="relative p-6 h-full overflow-y-auto">
+                        <div class="flex flex-col h-full">
+                            <h1 class="pt-2 pb-6">
+                                <a href="index.html">
+                                    <img src="assets/imgs/template/logo.svg" alt="logo"
+                                        class="flex-shrink-0 relative dark:hidden">
+                                    <img src="assets/imgs/template/logo-white.svg" alt="logo"
+                                        class="flex-shrink-0 relative hidden dark:inline-block">
+                                </a>
+                            </h1>
+                            <ul class="py-6 mb-6 border-y border-neutral-300 dark:border-neutral-dark-300">
+                                <li class="relative"><a href="index.html" class="menu-item">Home</a></li>
+                                <li class="relative"><a href="page-about.html" class="menu-item">About Us</a></li>
+                                <li class="relative"><a href="blog.html" class="menu-item">Blog</a></li>
+                                <li class="relative"><a href="certification.html" class="menu-item">Certification</a>
+                                </li>
+                            </ul>
+                            <div class="flex flex-wrap flex-col mt-4">
+                                <h4 class="text-lg text-neutral-950 dark:text-neutral-dark-950 font-bold mb-4">Stay
+                                    Connectted</h4>
+                                <p class="text-sm text-neutral-700 font-medium mb-4 leading-5">Imagine waking up to a
+                                    dose of
+                                    positivity, lifestyle hacks, and inspiration tailored just for you. That's what you
+                                    get when you
+                                    subscribe!</p>
+                                <a href="page-login.html"
+                                    class="w-full p-4 text-neutral-950 bg-primary-light-950 rounded-md font-bold text-sm">Subscribe
+                                    Now</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <a class="navbar-close absolute top-5 p-4 right-3" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            class="fill-neutral-950 dark:fill-neutral-dark-950">
+                            <g clip-path="url(#clip0_85_6880)">
+                                <path
+                                    d="M1.42193 15.7358C1.05417 15.7571 0.692494 15.6349 0.413167 15.3948C-0.137722 14.8406 -0.137722 13.9456 0.413167 13.3914L12.4758 1.32871C13.0488 0.792556 13.9479 0.82236 14.484 1.39533C14.9689 1.91347 14.9971 2.70986 14.5502 3.26103L2.41647 15.3948C2.14074 15.6314 1.78487 15.7534 1.42193 15.7358Z" />
+                                <path
+                                    d="M13.4712 15.7338C13.0985 15.7322 12.7412 15.5843 12.4766 15.3218L0.413906 3.25906C-0.0964635 2.66307 -0.027076 1.76613 0.568917 1.25571C1.10086 0.800179 1.88536 0.800179 2.41725 1.25571L14.551 13.3184C15.1238 13.8547 15.1534 14.7538 14.6171 15.3267C14.5958 15.3495 14.5738 15.3715 14.551 15.3928C14.2539 15.6512 13.8629 15.7747 13.4712 15.7338Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_85_6880">
+                                    <rect width="15" height="15" fill="white" transform="translate(0 0.828125)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Hero 1-->
+    <section class="relative py-20 lg:py-24 lg:mb-6">
+        <div class="container px-4">
+            <h1 class="heading-1"><span class="font-light">Welcome to </span>GeNext.</h1>
+
+            <img src="assets/imgs/pages/img-29.webp" alt="" class="mt-12 rounded-3xl">
+        </div>
+    </section>
+
+
+
+
+
+    <!--Home 1 Section 1 -->
+    <section id="news" class="relative pt-20 py-10 lg:pt-12 lg:pb-24">
+        <div class="container px-4">
+            <div class="border-t border-neutral-950 dark:border-neutral-dark-500 pb-20 "></div>
+            <h3 class="heading-2 text-center mb-16"><span class="font-light">Latest News</span><br> & Stories</h3>
+            <!--Post list 1-->
+
+
+            <div class="flex flex-col md:flex-row justify-between gap-[58px]">
+
+
+
+
+
+
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-x-[30px] gap-y-[65px] max-w-[850px]">
+                    <div class="flex-col justify-start items-start gap-5 inline-flex hover-up">
+                        <a href="single.html" class="rounded-3xl overflow-hidden max-h-[606px]">
+                            <img src="assets/imgs/pages/img-06.webp" />
+                        </a>
+                        <div class="flex-col justify-start items-start gap-3.5 flex">
+                            <div class="justify-start items-center gap-5 inline-flex">
+                                <a href="category.html"
+                                    class="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
+                                    <div
+                                        class="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
+                                        Latest
+                                    </div>
+                                </a>
+                                <div class="justify-start items-center gap-2 flex">
+                                    <a href="author.html"><img class="w-9 h-9 rounded-3xl"
+                                            src="assets/imgs/avatar/avatar-01.webp" /></a>
+                                    <div
+                                        class="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
+                                        <a href="author.html">James Murphy</a> - April, 2025</div>
+                                </div>
+                            </div>
+                            <h3><a class="text-neutral-950 dark:text-neutral-dark-950 text-2xl font-bold leading-snug item-link"
+                                    href="single.html">This Earth day, Genext Launches</a></h3>
+                        </div>
+                    </div>
+                    <div class="flex-col justify-start items-start gap-5 inline-flex hover-up">
+                        <a href="single.html" class="rounded-3xl overflow-hidden max-h-[606px]">
+                            <img src="assets/imgs/pages/img-06.webp" />
+                        </a>
+                        <div class="flex-col justify-start items-start gap-3.5 flex">
+                            <div class="justify-start items-center gap-5 inline-flex">
+                                <a href="category.html"
+                                    class="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
+                                    <div
+                                        class="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
+                                        Latest
+                                    </div>
+                                </a>
+                                <div class="justify-start items-center gap-2 flex">
+                                    <a href="author.html"><img class="w-9 h-9 rounded-3xl"
+                                            src="assets/imgs/avatar/avatar-01.webp" /></a>
+                                    <div
+                                        class="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
+                                        <a href="author.html">Debashish Sengupta</a> - April 4, 2025</div>
+                                </div>
+                            </div>
+                            <h3><a class="text-neutral-950 dark:text-neutral-dark-950 text-2xl font-bold leading-snug item-link"
+                                    href="single.html">Building Consumer Trust: How UK Small Businesses Can Thrive in
+                                    2025</a></h3>
+                        </div>
+                    </div>
+                    <div class="flex-col justify-start items-start gap-5 inline-flex hover-up">
+                        <a href="single.html" class="rounded-3xl overflow-hidden max-h-[606px]">
+                            <img src="assets/imgs/pages/img-06.webp" />
+                        </a>
+                        <div class="flex-col justify-start items-start gap-3.5 flex">
+                            <div class="justify-start items-center gap-5 inline-flex">
+                                <a href="category.html"
+                                    class="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
+                                    <div
+                                        class="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
+                                        Latest
+                                    </div>
+                                </a>
+                                <div class="justify-start items-center gap-2 flex">
+                                    <a href="author.html"><img class="w-9 h-9 rounded-3xl"
+                                            src="assets/imgs/avatar/avatar-01.webp" /></a>
+                                    <div
+                                        class="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
+                                        <a href="author.html">James Murphy</a> - July 4, 2024</div>
+                                </div>
+                            </div>
+                            <h3><a class="text-neutral-950 dark:text-neutral-dark-950 text-2xl font-bold leading-snug item-link"
+                                    href="single.html">Supporting Local Business, Supporting Your Community</a></h3>
+                        </div>
+                    </div>
+                    <div class="flex-col justify-start items-start gap-5 inline-flex hover-up">
+                        <a href="single.html" class="rounded-3xl overflow-hidden max-h-[606px]">
+                            <img src="assets/imgs/pages/method.webp" />
+                        </a>
+                        <div class="flex-col justify-start items-start gap-3.5 flex">
+                            <div class="justify-start items-center gap-5 inline-flex">
+                                <a href="category.html"
+                                    class="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
+                                    <div
+                                        class="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
+                                        Trending
+                                    </div>
+                                </a>
+                                <div class="justify-start items-center gap-2 flex">
+                                    <a href="author.html"><img class="w-9 h-9 rounded-3xl"
+                                            src="assets/imgs/avatar/avatar-01.webp" /></a>
+                                    <div
+                                        class="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
+                                        <a href="author.html">James Murphy</a> - July 4, 2024</div>
+                                </div>
+                            </div>
+                            <h3><a class="text-neutral-950 dark:text-neutral-dark-950 text-2xl font-bold leading-snug item-link"
+                                    href="single.html">The Genext Methodology</a></h3>
+                        </div>
+                    </div>
+                    <div class="flex-col justify-start items-start gap-5 inline-flex hover-up">
+                        <a href="single.html" class="rounded-3xl overflow-hidden max-h-[606px]">
+                            <img src="assets/imgs/pages/forceforgood.webp" />
+                        </a>
+                        <div class="flex-col justify-start items-start gap-3.5 flex">
+                            <div class="justify-start items-center gap-5 inline-flex">
+                                <a href="category.html"
+                                    class="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
+                                    <div
+                                        class="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
+                                        Trending
+                                    </div>
+                                </a>
+                                <div class="justify-start items-center gap-2 flex">
+                                    <a href="author.html"><img class="w-9 h-9 rounded-3xl"
+                                            src="assets/imgs/avatar/avatar-01.webp" /></a>
+                                    <div
+                                        class="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
+                                        <a href="author.html">James Murphy</a> - July 4, 2024</div>
+                                </div>
+                            </div>
+                            <h3><a class="text-neutral-950 dark:text-neutral-dark-950 text-2xl font-bold leading-snug item-link"
+                                    href="single.html">
+                                    Principles of Using Business as a Force for Good</a></h3>
+                        </div>
+                    </div>
+                    <div class="flex-col justify-start items-start gap-5 inline-flex hover-up">
+                        <a href="single.html" class="rounded-3xl overflow-hidden max-h-[606px]">
+                            <img src="assets/imgs/pages/certified.webp" />
+                        </a>
+                        <div class="flex-col justify-start items-start gap-3.5 flex">
+                            <div class="justify-start items-center gap-5 inline-flex">
+                                <a href="category.html"
+                                    class="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
+                                    <div
+                                        class="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
+                                        Trending
+                                    </div>
+                                </a>
+                                <div class="justify-start items-center gap-2 flex">
+                                    <a href="author.html"><img class="w-9 h-9 rounded-3xl"
+                                            src="assets/imgs/avatar/avatar-01.webp" /></a>
+                                    <div
+                                        class="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
+                                        <a href="author.html">James Murphy</a> - July 4, 2024</div>
+                                </div>
+                            </div>
+                            <h3><a class="text-neutral-950 dark:text-neutral-dark-950 text-2xl font-bold leading-snug item-link"
+                                    href="single.html">Genext: Certification that goes
+                                    beyond the ordinary</a></h3>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="mt-8">
+            <a href="category.html" class="button-4 hover-up">Load more posts</a>
+          </div> -->
+                </div>
+                <!-- SIDEVER -->
+                <div class="sidebar flex flex-col gap-12 md:max-w-[380px]">
+                    <!-- about box -->
+                    <div class="about p-12 rounded-3xl bg-primary-light-300 dark:bg-primary-dark-300">
+                        <h1 class="mb-8">
+                            <a href="index.html">
+                                <img src="assets/imgs/template/logo.svg" alt="logo"
+                                    class="flex-shrink-0 relative dark:hidden">
+                                <img src="assets/imgs/template/logo-white.svg" alt="logo"
+                                    class="flex-shrink-0 relative hidden dark:inline-block">
+                            </a>
+                        </h1>
+                        <p class="font-medium text-neutral-950 dark:text-neutral-dark-950 mb-8 lg:mb-12 max-w-[350px]">
+                            It involves entrepreneurship, management, marketing, finance, and many other aspects. Become
+                            a certified
+                            Genext Business.
+                        </p>
+                        <div class="flex gap-2">
+                            <div
+                                class="w-12 h-12 rounded-[5px] flex justify-center items-center border border-neutral-300 dark:border-neutral-dark-300 cursor-pointer hover-up hover:bg-primary-light-200 dark:hover:bg-primary-dark-300">
+                                <img src="assets/imgs/social/fb.svg">
+                            </div>
+                            <!-- <div
+                class="w-12 h-12 rounded-[5px] flex justify-center items-center border border-neutral-300 dark:border-neutral-dark-300 cursor-pointer hover-up hover:bg-primary-light-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                  class="fill-neutral-950 dark:fill-neutral-dark-950">
+                  <g clip-path="url(#clip0_191_5465)">
+                    <path
+                      d="M10.083 6.77491L15.9113 0H14.5302L9.46951 5.88256L5.42755 0H0.765625L6.87786 8.89547L0.765625 16H2.14682L7.49104 9.78782L11.7596 16H16.4216L10.0827 6.77491H10.083ZM8.1913 8.97384L7.57201 8.08805L2.64448 1.03974H4.76591L8.74248 6.72795L9.36178 7.61374L14.5308 15.0075H12.4094L8.1913 8.97418V8.97384Z" />
+                  </g>
+                </svg>
+              </div> -->
+                            <div
+                                class="w-12 h-12 rounded-[5px] flex justify-center items-center border border-neutral-300 dark:border-neutral-dark-300 cursor-pointer hover-up hover:bg-primary-light-200">
+                                <img src="assets/imgs/social/in.svg">
+                            </div>
+
+                            <div
+                                class="w-12 h-12 rounded-[5px] flex justify-center items-center border border-neutral-300 dark:border-neutral-dark-300 cursor-pointer hover-up hover:bg-primary-light-200">
+                                <img src="assets/imgs/social/yt.svg">
+                            </div>
+
+                            <div
+                                class="w-12 h-12 rounded-[5px] flex justify-center items-center border border-neutral-300 dark:border-neutral-dark-300 cursor-pointer hover-up hover:bg-primary-light-200">
+                                <img src="assets/imgs/social/li.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Featured box -->
+
+                    <!-- Banner box -->
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-2xl text-neutral-950 font-bold dark:text-neutral-dark-950">Launching <span
+                                class="font-light">September 2024</span></h4>
+                        <div class="w-72 h-96 relative rounded-2xl">
+                            <img class="w-72 h-96 left-0 top-0 absolute rounded-2xl"
+                                src="assets/imgs/pages/banner1.png" />
+                            <div
+                                class="w-72 h-96 left-0 bottom-0 absolute bg-gradient-to-t from-neutral-950/50 to-transparent rounded-2xl">
+                            </div>
+                            <div class="w-full px-8 bottom-12 absolute text-center">
+                                <span class="text-xl text-neutral-0 font-bold">
+                                    <span class="font-light">It seeks to inspire and</span> motivate individuals
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 1 Section 3 -->
+    <section class="relative pt-20 py-10 lg:pt-12 lg:pb-24">
+        <div class="container px-4">
+            <div
+                class="mx-auto grid lg:grid-cols-2 gap-8 lg:gap-16 items-center justify-center max-w-[1070px] bg-primary-light-300 dark:bg-primary-dark-300 rounded-3xl px-8 py-12 md:px-16 md:py-24 overflow-hidden relative">
+                <h2
+                    class="text-5xl leading-tight md:text-6xl lg:text-6xl font-bold text-neutral-950 dark:text-neutral-dark-950 mb-0">
+                    <span class="font-light">Let's</span> explore, share, and inspire <span
+                        class="font-light">together!</span>
+                </h2>
+                <div class="flex flex-col gap-8">
+                    <p class="text-lg font-medium text-neutral-700 dark:text-neutral-dark-300">Ready to get certified as
+                        a next
+                        generation business? Join our vibrant community and be part of the conversation.</p>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <a href="page-login.html"
+                            class="group btn bg-primary-light-950 dark:bg-primary-dark-950 rounded-full px-8 py-4 text-xl text-neutral-950 dark:text-neutral-dark-950 flex gap-2 items-center">
+                            <span>Get Started</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                class="fill-neutral-950 dark:fill-neutral-dark-950 group-hover:translate-x-1 transition-all duration-300">
+                                <g clip-path="url(#clip0_253_4238)">
+                                    <path
+                                        d="M23.6164 11.0663L14.9491 2.39884C14.7017 2.15143 14.372 2.01562 14.0204 2.01562C13.6684 2.01562 13.3388 2.15162 13.0914 2.39884L12.3045 3.18596C12.0573 3.43298 11.9211 3.76293 11.9211 4.11473C11.9211 4.46634 12.0573 4.80741 12.3045 5.05443L17.3608 10.1219H1.29657C0.572288 10.1219 0 10.6889 0 11.4134V12.5262C0 13.2507 0.572288 13.8748 1.29657 13.8748H17.4182L12.3047 18.9706C12.0575 19.218 11.9213 19.539 11.9213 19.8908C11.9213 20.2422 12.0575 20.5679 12.3047 20.8151L13.0916 21.5997C13.339 21.8471 13.6686 21.9819 14.0206 21.9819C14.3722 21.9819 14.7019 21.8453 14.9493 21.5979L23.6166 12.9307C23.8646 12.6825 24.001 12.3512 24 11.999C24.0008 11.6456 23.8646 11.3141 23.6164 11.0663Z">
+                                    </path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_253_4238">
+                                        <rect width="24" height="24"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="page-contact.html"
+                            class="btn border border-neutral-950 dark:bg-neutral-dark-0 rounded-full px-8 py-4 text-xl text-neutral-950 dark:text-neutral-dark-950 items-center">Contact
+                            Us</a>
+                    </div>
+                </div>
+                <img src="assets/imgs/template/shape-1.svg" alt="" class="absolute top-0 left-0 opacity-10 ">
+                <img src="assets/imgs/template/shape-2.svg" alt="" class="absolute bottom-0 right-0 opacity-10 ">
+            </div>
+        </div>
+    </section>
+
+
+    <!--Hero 1-->
+    <section id="certification" class="relative py-20 lg:py-24 lg:mb-16">
+        <div class="container px-4">
+            <h1 class="heading-1">Genext <span class="font-light">Certification</span></h1>
+            <div class="flex justify-between items-center gap-8 lg:gap-32 mt-12 flex-col lg:flex-row">
+                <p class="text-neutral-950 dark:text-neutral-dark-950 text-base font-medium lg:w-2/4">Genext
+                    Certification is
+                    tailor-made for SMEs. If you operate for profit and have been in business for at least 12 months,
+                    you're
+                    eligible. Dive into our straightforward 6-step guide and become part of the community of businesses
+                    making a
+                    difference.</p>
+
+            </div>
+            <div class="swiper-container post-slider-4">
+                <div class="swiper-wrapper pt-4">
+                    <div class="swiper-slide hover-up">
+                        <div class="w-full h-52 relative rounded-3xl overflow-hidden">
+                            <a href="category.html"><img class="left-0 top-0 absolute rounded-3xl"
+                                    src="assets/imgs/pages/tech.webp" /></a>
+                            <div
+                                class="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
+                                <a href="category.html"
+                                    class="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">Technology</a>
+                                <div class="w-[22px] h-[22px] relative">
+                                    <div
+                                        class="w-7 h-7 left-[-3px] top-[-3px] absolute bg-primary-light-950 rounded-full">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hover-up">
+                        <div class="w-full h-52 relative rounded-3xl overflow-hidden">
+                            <a href="category.html"><img class="left-0 top-0 absolute rounded-3xl"
+                                    src="assets/imgs/pages/restaurant.webp" /></a>
+                            <div
+                                class="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
+                                <a href="category.html"
+                                    class="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">Hospitality</a>
+                                <div class="w-[22px] h-[22px] relative">
+                                    <div
+                                        class="w-7 h-7 left-[-3px] top-[-3px] absolute bg-primary-light-950 rounded-full">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hover-up">
+                        <div class="w-full h-52 relative rounded-3xl overflow-hidden">
+                            <a href="category.html"><img class="left-0 top-0 absolute rounded-3xl"
+                                    src="assets/imgs/pages/professional.webp" /></a>
+                            <div
+                                class="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
+                                <a href="category.html"
+                                    class="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">Professional
+                                    Services</a>
+                                <div class="w-[22px] h-[22px] relative">
+                                    <div
+                                        class="w-7 h-7 left-[-3px] top-[-3px] absolute bg-primary-light-950 rounded-full">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hover-up">
+                        <div class="w-full h-52 relative rounded-3xl overflow-hidden">
+                            <a href="category.html"><img class="left-0 top-0 absolute rounded-3xl"
+                                    src="assets/imgs/pages/manufacturing.webp" /></a>
+                            <div
+                                class="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
+                                <a href="category.html"
+                                    class="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">Manufacturing</a>
+                                <div class="w-[22px] h-[22px] relative">
+                                    <div
+                                        class="w-7 h-7 left-[-3px] top-[-3px] absolute bg-primary-light-950 rounded-full">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hover-up">
+                        <div class="w-full h-52 relative rounded-3xl overflow-hidden">
+                            <a href="category.html"><img class="left-0 top-0 absolute rounded-3xl"
+                                    src="assets/imgs/pages/retail.webp" /></a>
+                            <div
+                                class="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
+                                <a href="category.html"
+                                    class="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">Retail</a>
+                                <div class="w-[22px] h-[22px] relative">
+                                    <div
+                                        class="w-7 h-7 left-[-3px] top-[-3px] absolute bg-primary-light-950 rounded-full">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hover-up">
+                        <div class="w-full h-52 relative rounded-3xl overflow-hidden">
+                            <a href="category.html"><img class="left-0 top-0 absolute rounded-3xl"
+                                    src="assets/imgs/pages/tourism.webp" /></a>
+                            <div
+                                class="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
+                                <a href="category.html"
+                                    class="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">Tourism</a>
+                                <div class="w-[22px] h-[22px] relative">
+                                    <div
+                                        class="w-7 h-7 left-[-3px] top-[-3px] absolute bg-primary-light-950 rounded-full">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!--.container-->
+        <div
+            class="header-bg absolute bottom-0 left-0 right-0 -z-50 w-full h-full bg-gradient-to-t from-primary-light-950/15 to-transparent">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full pb-20">
+
+        <div class="container px-4">
+            <!-- <div class="grid grid-cols-1 justify-between items-start md:grid-cols-2 md:gap-4 lg:gap-8 md:justify-items-end md:items-center mb-8 md:mb-12"> -->
+            <div class="flex flex-col md:flex-row justify-between md:items-end items-start mb-8 md:mb-20">
+                <div class="pl-2 mb-8 md:mb-0 md:pl-0 md:max-w-[50%]">
+                    <h3
+                        class="text-3xl md:text-4xl lg:text-6xl font-bold text-neutral-950 dark:text-neutral-dark-950 leading-tight">
+                        <span class="font-light">Subscribe to The Beanstalk our monthly newsletter for lastest</span>
+                        news and
+                        stories.
+                    </h3>
+                </div>
+                <div class="mb-12 md:mb-0">
+                    <form class="max-w-full overflow-hidden" action="">
+                        <div
+                            class="flex flex-col md:flex-row mb-4 md:bg-neutral-0 dark:bg-neutral-dark-200 rounded-full p-1 md:border border-neutral-300 dark:border-neutral-dark-300">
+                            <input
+                                class="focus:outline-none transition duration-200 py-4 bg-neutral-0 dark:bg-neutral-dark-200 rounded-full pl-6 w-full mb-2 md:mb-0 md:border-0 border border-neutral-300 dark:border-neutral-dark-300 "
+                                type="text" placeholder="Email address">
+                            <button
+                                class="w-full sm:w-auto h-14 py-4 px-6 rounded-full bg-primary-light-950 dark:bg-primary-dark-950 transition duration-200 flex items-center justify-center gap-2"
+                                type="submit">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 fill-neutral-950"
+                                    preserveAspectRatio="none">
+                                    <path
+                                        d="M19.8829 0.671875H2.8827C2.35277 0.673442 1.84497 0.890991 1.47025 1.277C1.09552 1.663 0.884334 2.18609 0.882812 2.73198V15.6118C0.884334 16.1577 1.09552 16.6807 1.47025 17.0668C1.84497 17.4528 2.35277 17.6703 2.8827 17.6719H19.8829C20.4129 17.6703 20.9207 17.4528 21.2954 17.0668C21.6701 16.6807 21.8813 16.1577 21.8828 15.6118V2.73198C21.8813 2.18609 21.6701 1.663 21.2954 1.277C20.9207 0.890991 20.4129 0.673442 19.8829 0.671875ZM19.6326 5.04989L11.3828 10.7158L3.13182 5.04989V2.98979L11.3817 8.65566L19.6315 2.98979L19.6326 5.04989Z">
+                                    </path>
+                                </svg>
+                                <span class="text-neutral-950 font-medium text-2xl">Subscribe</span>
+                            </button>
+                        </div>
+                        <div class="flex items-start justify-start mt-8 pl-4">
+                            <input id="checkbox" type="checkbox"
+                                class="w-4 h-4 accent-primary-light-950  bg-primary-light-950 text-neutral-0  rounded cursor-pointer">
+                            <label for="checkbox" class="text-neutral-700 text-sm ml-2 cursor-pointer">I agree to the <a
+                                    href="#" class="text-neutral-950 dark:text-neutral-dark-950 font-bold">Terms &
+                                    conditions</a></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container px-4">
+            <div class="border-t border-neutral-950 dark:border-neutral-dark-500 pb-20 "></div>
+
+            <div class="pt-8">
+                <p class="text-sm text-neutral-700 dark:text-neutral-dark-700">© Genext Group 2025. Designed by <a
+                        target="_blank" href="https://story-x.co.uk/"
+                        class="text-neutral-950 dark:text-neutral-dark-950">StoryX</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--Scripts-->
+    <script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendors/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendors/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendors/jquery.scrollUp.min.js"></script>
+    <script src="assets/js/vendors/swiper-bundle.js"></script>
+    <script src="assets/js/vendors/waypoints.min.js"></script>
+    <script src="assets/js/vendors/wow.min.js"></script>
+    <script src="assets/js/vendors/lightbox.js"></script>
+    <script src="assets/js/vendors/alpine.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
