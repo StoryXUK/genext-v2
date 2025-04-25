@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeNext</title>
+    <link rel="icon" href="assets/imgs/template/favicon.svg" type="image/svg+xml" />
+    <script src="assets/js/vendors/color-modes.js"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/vendors/normalize.css">
+    <link rel="stylesheet" href="assets/css/vendors/animate.min.css">
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/vendors/lightbox.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bg-neutral-0 dark:bg-neutral-dark-0">
+    <header class="main-header mx-auto w-full flex justify-center py-2 z-50 relative dark:bg-primary-dark-0">
+        <div class="container flex justify-between items-center relative px-4">
+            <h1>
+                <a href="index.html">
+                    <img src="assets/imgs/template/logo.svg" alt="logo" class="flex-shrink-0 relative dark:hidden">
+                    <img src="assets/imgs/template/logo-white.svg" alt="logo"
+                        class="flex-shrink-0 relative hidden dark:inline-block">
+                </a>
+            </h1>
+            <ul class="xl:flex hidden">
+
+                <li class="relative"><a href="index.html" class="menu-item">Home</a></li>
+
+
+                <li class="relative"><a href="about.html" class="menu-item">About Us</a></li>
+                <!-- <li class="relative"><a href="blog.html" class="menu-item">Latest News & Stories</a></li> -->
+                <li class="relative"><a href="coming-soon.html" class="menu-item">Certification</a></li>
+                <!-- <li class="relative"><a href="page-contact.html" class="menu-item">Contact</a></li> -->
+            </ul>
+            <div class="flex justify-end align-middle content-center items-center relative gap-4">
+
+
+                <div class="dark-light cursor-pointer flex relative z-20">
+                    <img src="assets/imgs/template/icon-dark-light.svg" alt="dark/light" class="dark:hidden">
+                    <img src="assets/imgs/template/icon-dark-light-white.svg" alt="dark/light"
+                        class="hidden dark:inline-block">
+                </div>
+                <!-- <div class="search-box flex relative py-4 z-20">
+          <div class="search-icon cursor-pointer flex pr-2">
+            <img src="assets/imgs/template/icon-search.svg" alt="dark/light" class="flex-shrink-0 relative dark:hidden">
+            <img src="assets/imgs/template/icon-search-white.svg" alt="dark/light" class="flex-shrink-0 relative hidden dark:inline-block">
+          </div>
+          <div class="search-box-content absolute top-full right-0 p-10  mr-[-50px] max-w-[360px] md:max-w-none bg-neutral-0 dark:bg-neutral-dark-200 rounded-2xl shadow-sm hidden invisible mt-8 transition-all duration-300">
+            <h1 class="text-5xl font-bold text-neutral-950 dark:text-neutral-0 mb-4">Search <span class="font-light">Content</span></h1>
+            <div class="relative mb-8">
+              <form action="">
+                <div class="flex gap-4 mb-4 bg-neutral-0 dark:bg-neutral-dark-200 rounded-full p-1 pl-9 border border-neutral-300 dark:border-neutral-dark-300">
+                  <input class="flex-1 focus:outline-none transition duration-200 bg-transparent max-w-[175px] md:max-w-none" type="text" placeholder="Enter your key words">
+                  <button class="min-w-12 size-12 rounded-full bg-primary-light-950 transition duration-200 flex items-center justify-center gap-2" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                      <g clip-path="url(#clip0_135_1647)">
+                        <path d="M15.4202 17.2452L19.8183 21.6443C20.0585 21.8716 20.3775 22 20.7093 22C21.417 21.999 21.9991 21.416 21.9991 20.7084C21.9991 20.3775 21.8717 20.0585 21.6443 19.8183L17.2452 15.421C20.1162 11.6554 19.8321 6.24979 16.3946 2.81137L16.3882 2.80496L16.1333 2.55012C16.0977 2.51274 16.0577 2.47981 16.0142 2.45204C12.2467 -0.932293 6.43592 -0.814043 2.8105 2.81137C-0.936833 6.55962 -0.936833 12.6463 2.8105 16.3927C6.24983 19.832 11.6563 20.1171 15.4202 17.2452ZM14.5356 4.66946C17.2397 7.37637 17.2397 11.8286 14.5356 14.5355C11.8287 17.2388 7.37733 17.2388 4.67042 14.5355C1.96533 11.8286 1.96533 7.37637 4.67042 4.66946C7.37733 1.96529 11.8287 1.96529 14.5356 4.66946Z" fill="#151618" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_135_1647">
+                          <rect width="22" height="22" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              <div class="flex-col justify-start items-start gap-3 inline-flex mt-8">
+                <div class="text-neutral-950 dark:text-neutral-dark-950 text-base font-bold">Suggested</div>
+                <div class="flex flex-wrap gap-4">
+                  <a href="#" class="font-regular text-base text-neutral-700 link-hover hover:text-neutral-950 dark:text-neutral-0 dark:hover:text-neutral-dark-600">Events</a>
+                  <a href="#" class="font-regular text-base text-neutral-700 link-hover hover:text-neutral-950 dark:text-neutral-0 dark:hover:text-neutral-dark-600">Shop</a>
+                  <a href="#" class="font-regular text-base text-neutral-700 link-hover hover:text-neutral-950 dark:text-neutral-0 dark:hover:text-neutral-dark-600">Tech</a>
+                  <a href="#" class="font-regular text-base text-neutral-700 link-hover hover:text-neutral-950 dark:text-neutral-0 dark:hover:text-neutral-dark-600">Fashion</a>
+                  <a href="#" class="font-regular text-base text-neutral-700 link-hover hover:text-neutral-950 dark:text-neutral-0 dark:hover:text-neutral-dark-600">Books</a>
+                  <a href="#" class="font-regular text-base text-neutral-700 link-hover hover:text-neutral-950 dark:text-neutral-0 dark:hover:text-neutral-dark-600">Travel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+                <!-- <div class="py-4 hover-up xl:flex hidden relative z-20">
+          <a class="btn-primary" href="page-login.html">
+            Sign in
+          </a>
+        </div> -->
+                <button class="navbar-burger self-center xl:hidden">
+                    <svg class="fill-neutral-950 dark:fill-neutral-dark-950" id="fi_2976215"
+                        enable-background="new 0 0 464.205 464.205" height="26" viewBox="0 0 464.205 464.205" width="26"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <g id="grip-solid-horizontal_1_">
+                                <path
+                                    d="m435.192 406.18h-406.179c-16.024 0-29.013-12.99-29.013-29.013s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.99 29.013 29.013-.001 16.023-12.99 29.013-29.014 29.013z">
+                                </path>
+                                <path
+                                    d="m435.192 261.115h-406.179c-16.024 0-29.013-12.989-29.013-29.012s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.012-29.014 29.012z">
+                                </path>
+                                <path
+                                    d="m435.192 116.051h-406.179c-16.024 0-29.013-12.989-29.013-29.013s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.013-29.014 29.013z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <!--Mobile Menu-->
+            <div class="navbar-menu fixed top-0 left-0 z-50 w-full h-full bg-neutral-950 bg-opacity-30 hidden">
+                <div class="fixed top-0 left-0 bottom-0 w-5/6 max-w-xs bg-neutral-0 dark:bg-neutral-dark-0">
+                    <nav class="relative p-6 h-full overflow-y-auto">
+                        <div class="flex flex-col h-full">
+                            <h1 class="pt-2 pb-6">
+                                <a href="index.html">
+                                    <img src="assets/imgs/template/logo.svg" alt="logo"
+                                        class="flex-shrink-0 relative dark:hidden">
+                                    <img src="assets/imgs/template/logo-white.svg" alt="logo"
+                                        class="flex-shrink-0 relative hidden dark:inline-block">
+                                </a>
+                            </h1>
+                            <ul class="py-6 mb-6 border-y border-neutral-300 dark:border-neutral-dark-300">
+                                <li class="relative"><a href="index.html" class="menu-item">Home</a></li>
+                                <li class="relative"><a href="about.html" class="menu-item">About Us</a></li>
+                                <!-- <li class="relative"><a href="blog.html" class="menu-item">Latest News & Stories</a></li> -->
+                                <li class="relative"><a href="coming-soon.html" class="menu-item">Certification</a></li>
+                            </ul>
+                            <!-- <div class="flex flex-wrap flex-col mt-4">
+                <h4 class="text-lg text-neutral-950 dark:text-neutral-dark-950 font-bold mb-4">Stay Connectted</h4>
+                <p class="text-sm text-neutral-700 font-medium mb-4 leading-5">Imagine waking up to a dose of
+                  positivity, lifestyle hacks, and inspiration tailored just for you. That's what you get when you
+                  subscribe!</p>
+                <a href="page-login.html"
+                  class="w-full p-4 text-neutral-950 bg-primary-light-950 rounded-md font-bold text-sm">Subscribe
+                  Now</a>
+              </div> -->
+                        </div>
+                    </nav>
+                    <a class="navbar-close absolute top-5 p-4 right-3" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            class="fill-neutral-950 dark:fill-neutral-dark-950">
+                            <g clip-path="url(#clip0_85_6880)">
+                                <path
+                                    d="M1.42193 15.7358C1.05417 15.7571 0.692494 15.6349 0.413167 15.3948C-0.137722 14.8406 -0.137722 13.9456 0.413167 13.3914L12.4758 1.32871C13.0488 0.792556 13.9479 0.82236 14.484 1.39533C14.9689 1.91347 14.9971 2.70986 14.5502 3.26103L2.41647 15.3948C2.14074 15.6314 1.78487 15.7534 1.42193 15.7358Z" />
+                                <path
+                                    d="M13.4712 15.7338C13.0985 15.7322 12.7412 15.5843 12.4766 15.3218L0.413906 3.25906C-0.0964635 2.66307 -0.027076 1.76613 0.568917 1.25571C1.10086 0.800179 1.88536 0.800179 2.41725 1.25571L14.551 13.3184C15.1238 13.8547 15.1534 14.7538 14.6171 15.3267C14.5958 15.3495 14.5738 15.3715 14.551 15.3928C14.2539 15.6512 13.8629 15.7747 13.4712 15.7338Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_85_6880">
+                                    <rect width="15" height="15" fill="white" transform="translate(0 0.828125)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div
+        class="header-bg absolute top-0 left-0 right-0 -z-50 w-full h-[1100px] bg-gradient-to-b from-primary-light-950/15 to-transparent max-h-[1100px] overflow-hidden">
+    </div>
+
+    <!-- Single 1 Section 1 -->
+
+    <!-- Single 2 Section 2 -->
+    <section class="relative py-12">
+        <div class="container px-4">
+            <div class="flex justify-center">
+                <div class="post-content max-w-[850px]">
+                    <!-- Single Conttent -->
+
+                    <div
+                        class="single-content text-base font-medium text-neutral-950 dark:text-neutral-dark-950 leading-relaxed max-w-[850px]">
+
+                        <h1>Genext: Certification That Goes Beyond the Ordinary</h1>
+
+<p>In an era where consumers are more informed, stakeholders more demanding, and businesses under greater scrutiny, standing out for the right reasons has never been more important. That’s where <strong>Genext Certification</strong> comes in — a gold standard that recognises businesses not just for what they do, but for <em>how</em> they do it.</p>
+
+<h3>Why Choose Genext Certification?</h3>
+
+<h3>1. A 360° Business Evaluation</h3>
+<p>Genext Certification doesn’t just scratch the surface. It digs deep into every area of your business — from operations and supply chains to employee wellbeing and environmental impact. This holistic approach ensures that certified companies aren’t simply excelling in one department but are champions of sustainable and ethical practices across the board.</p>
+
+<h3>2. Built on Transparency and Accountability</h3>
+<p>Trust is everything in today’s business world. Genext Certification sends a powerful message to your customers, partners, and investors: your business operates with integrity, transparency, and a commitment to continuous improvement. It's more than a badge — it's a promise.</p>
+
+<h3>3. Made for SMEs</h3>
+<p>While many certification programs are designed with big corporations in mind, Genext was built specifically for small and medium-sized enterprises. If your business is for-profit and has been operating for at least 12 months, you’re eligible. It’s inclusive, practical, and designed to fit the realities of SME life.</p>
+
+<h3>4. A Competitive Edge That Matters</h3>
+<p>Consumers are voting with their wallets, choosing businesses that align with their values. Genext Certification offers a genuine competitive advantage, positioning your business as a leader in sustainability, responsibility, and long-term thinking.</p>
+
+<h3>5. Local Roots, Global Impact</h3>
+<p>Becoming Genext Certified means joining a growing network of businesses committed to making a difference — locally and globally. It’s about more than improving your own operations. It’s about contributing to a movement that’s shaping the future of business for good.</p>
+
+<h3>How Does It Work?</h3>
+
+<p>The Genext Certification process is designed to be both <strong>rigorous and accessible</strong>, ensuring that high standards are met without unnecessary complexity:</p>
+
+<h3>Step 1: Initial Assessment</h3>
+<p>Begin with a detailed self-assessment to evaluate your business’s current social and environmental performance. It’s an opportunity to reflect and prepare.</p>
+
+<h3>Step 2: Application Submission</h3>
+<p>Submit your application alongside documentation that outlines your business practices — from supply chain and employee benefits to community involvement and sustainability measures.</p>
+
+<h3>Step 3: Third-Party Verification</h3>
+<p>Independent experts will conduct a thorough review of your submission and carry out an on-site verification to ensure your claims match your reality.</p>
+
+<h3>Step 4: Certification Decision</h3>
+<p>Based on the assessment, Genext will determine if your business meets the required standards. If successful, you’ll receive the official Genext Certification — a symbol of your business’s values and impact.</p>
+
+<h3>Step 5: Continuous Improvement</h3>
+<p>Certification isn’t the end of the journey — it’s just the beginning. Maintaining your status means committing to ongoing improvement and growth, ensuring your business continues to lead by example.</p>
+
+<h3>Ready to Stand Out?</h3>
+
+<p>Genext Certification is more than just a stamp of approval — it’s a roadmap to becoming a better business. If you’re ready to gain recognition for the work you're doing, build trust, and join a community of change-makers, Genext is the certification that goes beyond the ordinary.</p>
+
+<p><strong>Learn more and start your journey today.</strong></p>
+
+
+
+                        <!-- <div class="grid md:grid-cols-2 gap-4 mt-8">
+                            <img src="assets/imgs/pages/img-19.png" class="rounded-3xl mb-8" alt="">
+                            <img src="assets/imgs/pages/img-24.png" class="rounded-3xl mb-8" alt="">
+                        </div> -->
+
+
+                    </div>
+
+                    <!-- Single Conttent -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Hero 1-->
+    <section id="certification" class="relative py-20 lg:py-24 lg:mb-16">
+        <div class="container px-4">
+            <h1 class="heading-1">Genext <span class="font-light">Certification</span></h1>
+            <div class="flex justify-between items-center gap-8 lg:gap-32 mt-12 flex-col lg:flex-row">
+                <p class="text-neutral-950 dark:text-neutral-dark-950 text-base font-medium lg:w-2/4">Genext
+                    Certification is
+                    tailor-made for SMEs. If you operate for profit and have been in business for at least 12 months,
+                    you're
+                    eligible. </p>
+
+            </div>
+            <div class="swiper-container post-slider-4">
+                <div class="swiper-wrapper pt-4">
+                    <div class="swiper-slide hover-up">
+                        <div class="w-full h-52 relative rounded-3xl overflow-hidden">
+                            <img class="left-0 top-0 absolute rounded-3xl" src="assets/imgs/pages/tech.webp" />
+                            <div
+                                class="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
+                                <div class="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">Technology
+                                </div>
+                                <div class="w-[22px] h-[22px] relative">
+                                    <div
+                                        class="w-7 h-7 left-[-3px] top-[-3px] absolute bg-primary-light-950 rounded-full">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hover-up">
+                        <div class="w-full h-52 relative rounded-3xl overflow-hidden">
+                            <img class="left-0 top-0 absolute rounded-3xl" src="assets/imgs/pages/restaurant.webp" />
+                            <div
+                                class="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
+                                <div href="page-contact.html"
+                                    class="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">Hospitality
+                                </div>
+                                <div class="w-[22px] h-[22px] relative">
+                                    <div
+                                        class="w-7 h-7 left-[-3px] top-[-3px] absolute bg-primary-light-950 rounded-full">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hover-up">
+                        <div class="w-full h-52 relative rounded-3xl overflow-hidden">
+                            <img class="left-0 top-0 absolute rounded-3xl" src="assets/imgs/pages/professional.webp" />
+                            <div
+                                class="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
+                                <div href="page-contact.html"
+                                    class="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">Professional
+                                    Services</div>
+                                <div class="w-[22px] h-[22px] relative">
+                                    <div
+                                        class="w-7 h-7 left-[-3px] top-[-3px] absolute bg-primary-light-950 rounded-full">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hover-up">
+                        <div class="w-full h-52 relative rounded-3xl overflow-hidden">
+                            <img class="left-0 top-0 absolute rounded-3xl" src="assets/imgs/pages/manufacturing.webp" />
+                            <div
+                                class="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
+                                <div href="page-contact.html"
+                                    class="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">
+                                    Manufacturing</div>
+                                <div class="w-[22px] h-[22px] relative">
+                                    <div
+                                        class="w-7 h-7 left-[-3px] top-[-3px] absolute bg-primary-light-950 rounded-full">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hover-up">
+                        <div class="w-full h-52 relative rounded-3xl overflow-hidden">
+                            <img class="left-0 top-0 absolute rounded-3xl" src="assets/imgs/pages/retail.webp" />
+                            <div
+                                class="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
+                                <div href="page-contact.html"
+                                    class="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">Retail</div>
+                                <div class="w-[22px] h-[22px] relative">
+                                    <div
+                                        class="w-7 h-7 left-[-3px] top-[-3px] absolute bg-primary-light-950 rounded-full">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hover-up">
+                        <div class="w-full h-52 relative rounded-3xl overflow-hidden">
+                            <img class="left-0 top-0 absolute rounded-3xl" src="assets/imgs/pages/tourism.webp" />
+                            <div
+                                class="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
+                                <div href="page-contact.html"
+                                    class="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">Tourism
+                                </div>
+                                <div class="w-[22px] h-[22px] relative">
+                                    <div
+                                        class="w-7 h-7 left-[-3px] top-[-3px] absolute bg-primary-light-950 rounded-full">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!--.container-->
+        <div
+            class="header-bg absolute bottom-0 left-0 right-0 -z-50 w-full h-full bg-gradient-to-t from-primary-light-950/15 to-transparent">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full pb-20">
+
+        <!-- <div class="container px-4">
+      <div class="grid grid-cols-1 justify-between items-start md:grid-cols-2 md:gap-4 lg:gap-8 md:justify-items-end md:items-center mb-8 md:mb-12">
+      <div class="flex flex-col md:flex-row justify-between md:items-end items-start mb-8 md:mb-20">
+        <div class="pl-2 mb-8 md:mb-0 md:pl-0 md:max-w-[50%]">
+          <h3
+            class="text-3xl md:text-4xl lg:text-6xl font-bold text-neutral-950 dark:text-neutral-dark-950 leading-tight">
+            <span class="font-light">Subscribe to The Beanstalk our monthly newsletter for lastest</span> news and
+            stories.
+          </h3>
+        </div>
+        <div class="mb-12 md:mb-0">
+          <form class="max-w-full overflow-hidden" action="">
+            <div
+              class="flex flex-col md:flex-row mb-4 md:bg-neutral-0 dark:bg-neutral-dark-200 rounded-full p-1 md:border border-neutral-300 dark:border-neutral-dark-300">
+              <input
+                class="focus:outline-none transition duration-200 py-4 bg-neutral-0 dark:bg-neutral-dark-200 rounded-full pl-6 w-full mb-2 md:mb-0 md:border-0 border border-neutral-300 dark:border-neutral-dark-300 "
+                type="text" placeholder="Email address">
+              <button
+                class="w-full sm:w-auto h-14 py-4 px-6 rounded-full bg-primary-light-950 dark:bg-primary-dark-950 transition duration-200 flex items-center justify-center gap-2"
+                type="submit">
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="flex-shrink-0 fill-neutral-950" preserveAspectRatio="none">
+                  <path
+                    d="M19.8829 0.671875H2.8827C2.35277 0.673442 1.84497 0.890991 1.47025 1.277C1.09552 1.663 0.884334 2.18609 0.882812 2.73198V15.6118C0.884334 16.1577 1.09552 16.6807 1.47025 17.0668C1.84497 17.4528 2.35277 17.6703 2.8827 17.6719H19.8829C20.4129 17.6703 20.9207 17.4528 21.2954 17.0668C21.6701 16.6807 21.8813 16.1577 21.8828 15.6118V2.73198C21.8813 2.18609 21.6701 1.663 21.2954 1.277C20.9207 0.890991 20.4129 0.673442 19.8829 0.671875ZM19.6326 5.04989L11.3828 10.7158L3.13182 5.04989V2.98979L11.3817 8.65566L19.6315 2.98979L19.6326 5.04989Z">
+                  </path>
+                </svg>
+                <span class="text-neutral-950 font-medium text-2xl">Subscribe</span>
+              </button>
+            </div>
+            <div class="flex items-start justify-start mt-8 pl-4">
+              <input id="checkbox" type="checkbox"
+                class="w-4 h-4 accent-primary-light-950  bg-primary-light-950 text-neutral-0  rounded cursor-pointer">
+              <label for="checkbox" class="text-neutral-700 text-sm ml-2 cursor-pointer">I agree to the <a href="#"
+                  class="text-neutral-950 dark:text-neutral-dark-950 font-bold">Terms & conditions</a></label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> -->
+        <div class="container px-4">
+            <div class="border-t border-neutral-950 dark:border-neutral-dark-500 pb-20 "></div>
+
+            <div class="pt-8">
+                <p class="text-sm text-neutral-700 dark:text-neutral-dark-700">© Genext Group 2025. Designed by <a
+                        target="_blank" href="https://story-x.co.uk/"
+                        class="text-neutral-950 dark:text-neutral-dark-950">StoryX</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--Scripts-->
+    <script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendors/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendors/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendors/jquery.scrollUp.min.js"></script>
+    <script src="assets/js/vendors/swiper-bundle.js"></script>
+    <script src="assets/js/vendors/waypoints.min.js"></script>
+    <script src="assets/js/vendors/wow.min.js"></script>
+    <script src="assets/js/vendors/lightbox.js"></script>
+    <script src="assets/js/vendors/alpine.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
